@@ -1,3 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 
+#top-bar {
+  height: 60px;
+  width: 100%;
+}
+#top-bar .email-top {
+  float: left;
+  line-height: 60px;
+}
+#top-bar .email-top a {
+  text-decoration: none;
+  color: #DBDBDB;
+}
+#top-bar .sm-top {
+  float: right;
+  line-height: 60px;
+}
+
+.top-bar_wrapper {
+  max-width: 1000px;
+  height: 60px;
+  margin: auto;
+}
+
+header {
+  background: #f0f0f0;
+  min-height: 400px;
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
