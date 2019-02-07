@@ -5,6 +5,8 @@ body {
    padding:0;
 }
 
+/***** Top Bar *****/
+
 #top-bar {
    height:$top-bar_height;
    width:100%;
@@ -31,15 +33,92 @@ body {
    margin:auto;
 }
 
+/***** Header *****/
+
 header {
    min-height:400px;
    width:100%;
    text-align: center;
+
+   #logo {
+      max-width:$max-width;
+      margin:auto;
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.04),
+                  -10px 0px 40px rgba(0, 0, 0, 0.05);
+      -webkit-transition:all 0.3s ease-in-out;
+      -moz-transition:all 0.3s ease-in-out;
+      -o-transition:all 0.3s ease-in-out;
+      transition:all 0.3s ease-in-out;
+
+      &:hover {
+         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07),
+                     -10px 0px 40px rgba(0, 0, 0, 0.08);
+
+      }
+   }
+
+   a#donate {
+      background:$Blue;
+      width:100%;
+      display:inline-block;
+      padding:40px 0px;
+      color:#FFF;
+      text-decoration: none;
+      font-size:17px;
+      font-family:sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing:0.4px;
+   }
 }
 
-header #logo {
-   max-width:$max-width;
-   margin:auto;
-   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05),
-               -10px 0px 40px rgba(0, 0, 0, 0.04);
+/***** Navigation *****/
+
+nav {
+   margin-bottom:20px;
+
+   #nav-wrapper {
+      height:$top-bar_height;
+      max-width:$max-width;
+      margin:auto;
+
+      ul {
+         list-style:none;
+         line-height:$top-bar_height;
+
+         li {
+            display:inline-block;
+
+            &:after {
+               content:"|";
+               font-weight:bold;
+               margin-left:20px;
+               color:$LightGray;
+            }
+
+            &:last-child:after {
+               content:none;
+            }
+
+            a {
+               text-decoration: none;
+               font-weight:bold;
+               text-transform: uppercase;
+               padding:0;
+               margin:0 20px;
+               font-size:18px;
+               font-family:sans-serif;
+               color:$DarkGray;
+               -webkit-transition:all 0.3s ease-in-out;
+               -moz-transition:all 0.3s ease-in-out;
+               -o-transition:all 0.3s ease-in-out;
+               transition:all 0.3s ease-in-out;
+
+               &:hover {
+                  color:$Blue !important;
+               }
+            }
+         }
+      }
+   }
 }
