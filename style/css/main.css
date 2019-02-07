@@ -110,5 +110,9 @@ nav #nav-wrapper ul li a:hover {
 }
 
 /***** #Cover *****/
+#cover {
+  background: #c8c8c8;
+  height: 400px;
+}
 
 /*# sourceMappingURL=main.css.map */
