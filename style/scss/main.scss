@@ -114,7 +114,7 @@ nav {
                text-transform: uppercase;
                padding:0;
                margin:0 20px;
-               font-size:18px;
+               font-size:16px;
                font-family:sans-serif;
                color:$DarkGray;
                -webkit-transition:all 0.3s ease-in-out;
@@ -134,5 +134,9 @@ nav {
 /***** #Cover *****/
 #cover {
    background:rgb(200, 200, 200);
+   height:400px;
+}
+article > section#meet-alex {
+   background:white;
    height:400px;
 }
