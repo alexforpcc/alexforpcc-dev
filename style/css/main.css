@@ -57,6 +57,13 @@ header a#donate {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header a#donate:hover {
+  background: #5794cd;
 }
 
 /***** Navigation *****/
@@ -101,5 +108,7 @@ nav #nav-wrapper ul li a {
 nav #nav-wrapper ul li a:hover {
   color: #4B8CCA !important;
 }
+
+/***** #Cover *****/
 
 /*# sourceMappingURL=main.css.map */

@@ -69,6 +69,14 @@ header {
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing:0.4px;
+      -webkit-transition:all 0.3s ease-in-out;
+      -moz-transition:all 0.3s ease-in-out;
+      -o-transition:all 0.3s ease-in-out;
+      transition:all 0.3s ease-in-out;
+
+      &:hover {
+         background:lighten($Blue, 3%);
+      }
    }
 }
 
@@ -121,4 +129,9 @@ nav {
          }
       }
    }
+}
+
+/***** #Cover *****/
+#cover {
+   
 }
