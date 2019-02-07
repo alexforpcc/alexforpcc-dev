@@ -36,7 +36,6 @@ header {
 header #logo {
   max-width: 800px;
   margin: auto;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.04), -10px 0px 40px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
