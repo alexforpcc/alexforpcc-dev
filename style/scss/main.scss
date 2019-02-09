@@ -14,6 +14,7 @@ body {
    .email-top {
       float:left;
       line-height:$top-bar_height;
+      margin-left:15px;
 
       a {
          text-decoration: none;
@@ -24,6 +25,7 @@ body {
    .sm-top {
       float:right;
       line-height:$top-bar_height;
+      margin-right:15px;
    }
 }
 
@@ -59,7 +61,7 @@ header {
       background:$Blue;
       width:100%;
       display:inline-block;
-      padding:40px 0px;
+      padding:30px 0px;
       color:#FFF;
       text-decoration: none;
       font-size:17px;
@@ -91,6 +93,7 @@ nav {
       ul {
          list-style:none;
          line-height:$top-bar_height;
+         padding-left:0px !important;
 
          li {
             display:inline-block;
@@ -137,4 +140,18 @@ nav {
 article > section#meet-alex {
    background:white;
    height:400px;
+}
+
+@media screen and (min-width: 725px) {
+
+}
+
+@media screen and (max-width: 725px) {
+   nav #nav-wrapper ul li:after {
+      margin-left:5px !important;
+   }
+
+   nav #nav-wrapper ul li a {
+      margin:0 10px;
+   }
 }

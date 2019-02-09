@@ -23,7 +23,13 @@
 		<!-- jQuery & Javascript -->
 		<script src="scripts/jquery.js"></script>
 		<script src="scripts/main.js"></script>
-		</style>
+		<script src="libs/slippry/dist/slippry.min.js"></script>
+		<link rel="stylesheet" href="libs/slippry/dist/slippry.css" />
+		<script>
+		jQuery(document).ready(function(){
+			jQuery('#alex-slider').slippry()
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -51,10 +57,12 @@
 			<a href="#" id="donate">Donate</a>
 		</header>
 
-		<!-- #Cover -->
-		<div id="cover">
-		</div>
-
+		<ul id="alex-slider" height="100">
+			<li>
+				<a href="#slide1"><img src="assets/img/alex-with-youth-slider.png" alt="Alexander working with high school youth"></a>
+			</li>
+		</ul>
+		
 		<!-- About -->
 		<article>
 
