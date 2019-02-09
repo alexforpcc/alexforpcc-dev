@@ -28,7 +28,10 @@
 		<link rel="stylesheet" href="libs/slippry/dist/slippry.css" />
 		<script>
 		jQuery(document).ready(function(){
-			jQuery('#alex-slider').slippry()
+			jQuery('#alex-slider').slippry();
+			$("#nav-mobile").click(function() {
+				$("#nav-desktop").toggle();
+			});
 		});
 		</script>
 	</head>
@@ -45,18 +48,18 @@
 			<embed src="assets/gfx/svg/logo.svg" type="image/svg+xml" id="logo" />
 
 			<script>
-			$(document).ready(function() {
-				("#nav-mobile").click(function() {
-					$("#nav-desktop").toggle();
-				});
-			});
+			if ($(window).width() => 600) {
+				$("#nav-desktop").toggle();
+			}
+			else {
+			}
 			</script>
 			<!-- Navigation -->
 			<nav>
 				<div id="nav-wrapper">
 					<i id="nav-mobile" class="fas fa-ellipsis-h"></i>
 					<ul id="nav-desktop">
-						<li><a href="#">Meet Alex</a></li>
+						<li><a href="#meet-alex">Meet Alex</a></li>
 						<li><a href="#">Priorities</a></li>
 						<li><a href="#">Supporters</a></li>
 						<li><a href="#">Stay Connected</a></li>
@@ -74,11 +77,44 @@
 
 		<!-- About -->
 		<article>
-
 			<!-- Meet Alexander -->
 			<section id="meet-alex">
+				<div id="meet-alex-profile">
+					<h1 class="title"> Meet Alex </h1>
+					<div class="meet-alex-profile">
+						<div id="alex-picture"></div>
+						<div id="alex-descr-wrap">
+							<div class="alex-descr">
+								<h1>Alexander Diaz Rios</h1>
+								<h3>Did someshit</h3>
 
+								<p>My name is Alex Diaz Rios, I am passionate advocate for education as a first-generation college graduate and public-school teacher.</p>
+
+								<p>I currently teach social studies and college/career readiness at Westview High School and CREATE Alternative School.</p>
+
+								<a href="#" class="btn btn-light">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Priorities -->
+			<section id="priorities">
+			</section>
+
+			<!-- Get Involved -->
+			<section id="get-involved">
+			</section>
+
+			<!-- Supporters -->
+			<section id="supporters">
 			</section>
 		</article>
+
+		<!-- Footers -->
+		<footer>
+
+		</footer>
 	</body>
 </html>

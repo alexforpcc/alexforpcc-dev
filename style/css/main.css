@@ -3,6 +3,28 @@ body {
   padding: 0;
 }
 
+.btn {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px 0px;
+  color: #969696;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 3px solid #F4F4F4;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #4B8CCA;
+  border: 3px solid transparent;
+  color: #FFF;
+}
+
 /***** Top Bar *****/
 #top-bar {
   height: 60px;
@@ -125,8 +147,63 @@ nav #nav-mobile {
 }
 
 article > section#meet-alex {
-  background: white;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+article > section#meet-alex .title {
+  font-size: 100px;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: -40px;
+  color: #DBDBDB;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.meet-alex-profile {
+  max-width: 800px;
   height: 400px;
+  background: white;
+  margin: auto;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07), -10px 0px 40px rgba(0, 0, 0, 0.08);
+}
+
+#alex-picture {
+  float: left;
+  height: 400px;
+  width: 40%;
+  background: url("../../assets/img/alex-portait.jpg");
+  background-size: cover;
+}
+
+#alex-descr-wrap {
+  float: right;
+  height: 400px;
+  width: 60%;
+}
+
+.alex-descr {
+  padding: 20px 30px 0px 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400 !important;
+}
+.alex-descr h1 {
+  font-size: 22px;
+  color: #5B5B5B;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.alex-descr h3 {
+  color: #F4F4F4;
+  padding: 0px;
+  margin: 0;
+}
+.alex-descr p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #969696;
 }
 
 @media screen and (max-width: 725px) {
