@@ -12,6 +12,8 @@ body {
    text-align: center;
    padding:15px 0px;
    color:$Grays;
+   font-family:"Poppins", sans-serif;
+   background:#FFF;
    font-weight:500;
    letter-spacing: 1px;
    text-transform: uppercase;
@@ -23,9 +25,14 @@ body {
 
    &:hover {
       background:$Blue;
-      border:3px solid transparent;
+      border:3px solid $Blue;
       color:#FFF;
    }
+}
+
+.btn-section {
+   max-width:$max-width/2 !important;
+   margin:auto;
 }
 
 /***** Top Bar *****/
@@ -74,8 +81,7 @@ header {
       transition:all 0.3s ease-in-out;
 
       &:hover {
-         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07),
-                     -10px 0px 40px rgba(0, 0, 0, 0.08);
+         box-shadow:$box-shadow;
 
       }
    }
@@ -190,8 +196,7 @@ article > section#meet-alex {
    height:400px;
    background:white;
    margin:auto;
-   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07),
-               -10px 0px 40px rgba(0, 0, 0, 0.08);
+   box-shadow:$box-shadow;
 }
 
 #alex-picture {
@@ -232,6 +237,31 @@ article > section#meet-alex {
       color:$Grays;
    }
 }
+
+.meet-alex_story {
+   height:300px;
+   background:Red;
+   margin:auto;
+   margin-top:100px;
+   margin-bottom:100px;
+   max-width:$max-width;
+   box-shadow:$box-shadow;
+
+   .meet-alex_part1-descr {
+      height:300px;
+      background:blue;
+      width:50%;
+   }
+
+   .meet-alex_part1-img {
+      height:300px;
+      background:green;
+      width:50%;
+   }
+}
+
+.left {float:left;}
+.right {float:right;}
 
 // @media screen and (min-width: 725px) {
 //
