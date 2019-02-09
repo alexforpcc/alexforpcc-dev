@@ -58,6 +58,7 @@ header {
    }
 
    a#donate {
+      z-index:-100;
       background:$Blue;
       width:100%;
       display:inline-block;
@@ -130,6 +131,13 @@ nav {
          }
       }
    }
+
+   #nav-mobile {
+      display:none;
+      line-height:$top-bar_height;
+      font-size:36px;
+      color:$DarkGray;
+   }
 }
 
 /***** #Cover *****/
@@ -142,9 +150,9 @@ article > section#meet-alex {
    height:400px;
 }
 
-@media screen and (min-width: 725px) {
-
-}
+// @media screen and (min-width: 725px) {
+//
+// }
 
 @media screen and (max-width: 725px) {
    nav #nav-wrapper ul li:after {
@@ -153,5 +161,26 @@ article > section#meet-alex {
 
    nav #nav-wrapper ul li a {
       margin:0 10px;
+   }
+}
+
+@media screen and (max-width:600px) {
+   #nav-mobile {
+      display:inline-block !important;
+   }
+
+   #nav-desktop {
+      display:none;
+      
+      li {
+         display: block !important;
+      }
+
+      li a {
+         background: red !important;
+         display:block;
+         margin:0;
+         padding:0;
+      }
    }
 }

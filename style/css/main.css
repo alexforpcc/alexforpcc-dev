@@ -47,6 +47,7 @@ header #logo:hover {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07), -10px 0px 40px rgba(0, 0, 0, 0.08);
 }
 header a#donate {
+  z-index: -100;
   background: #4B8CCA;
   width: 100%;
   display: inline-block;
@@ -110,6 +111,12 @@ nav #nav-wrapper ul li a {
 nav #nav-wrapper ul li a:hover {
   color: #4B8CCA !important;
 }
+nav #nav-mobile {
+  display: none;
+  line-height: 60px;
+  font-size: 36px;
+  color: #5B5B5B;
+}
 
 /***** #Cover *****/
 #cover {
@@ -129,6 +136,24 @@ article > section#meet-alex {
 
   nav #nav-wrapper ul li a {
     margin: 0 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #nav-mobile {
+    display: inline-block !important;
+  }
+
+  #nav-desktop {
+    display: none;
+  }
+  #nav-desktop li {
+    display: block !important;
+  }
+  #nav-desktop li a {
+    background: red !important;
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 }
 
