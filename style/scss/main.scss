@@ -72,6 +72,7 @@ header {
    min-height:100px;
    width:100%;
    text-align: center;
+   padding-top:3%;
 
    #logo {
       max-width:$max-width;
@@ -81,9 +82,8 @@ header {
       -o-transition:all 0.3s ease-in-out;
       transition:all 0.3s ease-in-out;
 
-      &:hover {
+      &:hover, &:active {
          box-shadow:$box-shadow;
-
       }
    }
 
@@ -167,10 +167,10 @@ nav {
    #nav-mobile {
       display:none;
       line-height:$top-bar_height;
-      font-size:36px;
-      color:$DarkGray;
+      font-size:50px;
+      color:$Grays;
       padding:0px 30px;
-      
+
       &:hover {
          cursor: pointer;
       }
@@ -188,10 +188,11 @@ article > section#meet-alex {
    padding:0;
 
    .title {
-      font-size:100px;
+      font-size:7em;
       text-align: center;
-      padding:0px;
-      margin-bottom:-40px;
+      padding:0 !important;
+      // margin-bottom:-40px;
+      margin:150px 0px 0px 0px;
       color:$Gray;
       font-weight:600;
       text-transform: uppercase;
@@ -227,6 +228,7 @@ article > section#meet-alex {
    float:right;
    height:400px;
    width:60%;
+   overflow: scroll;
 }
 
 .alex-descr {
@@ -325,15 +327,25 @@ article > section#meet-alex {
    }
 }
 
-@media screen and (min-width:725px) {
+@media screen and (min-width:600px) {
    #nav-desktop {
       display:inline-block !important;
+   }
+
+   article > section#meet-alex {
+      width:95%;
+      margin:auto;
    }
 }
 
 @media screen and (max-width:600px) {
    #nav-mobile {
       display:inline-block !important;
+   }
+
+   a#donate {
+      padding:20px 0px !important;
+      font-size:.9em !important;
    }
 
    #nav-desktop {
@@ -353,9 +365,49 @@ article > section#meet-alex {
          background: white !important;
          display:block;
          margin:0 !important;
-         padding:40px 0px !important;
+         padding:50px 0px !important;
          width:100% !important;
       }
+   }
+
+   .meet-alex-profile {
+      min-height:400px !important;
+      height:auto !important;
+      box-shadow:0px 0px 0px !important;
+   }
+
+   #alex-picture {
+      float:none;
+      width:100%;
+   }
+
+   #alex-descr-wrap {
+      float:none;
+      width:100%;
+   }
+
+   .meet-alex_story {
+      height:auto !important;
+      margin-top:0px;
+      margin-bottom:0px;
+      box-shadow:0px 0px 0px !important;
+   }
+
+   .meet-alex_story .meet-alex_part1-descr {
+      float:none !important;
+      width:100%;
+      height:auto !important;
+   }
+
+   .meet-alex_story .meet-alex_part1-img {
+      float:none !important;
+      width:100%;
+
+   }
+
+   article > section#meet-alex .title {
+      font-size:4em !important;
+      line-height:70px;
    }
 }
 
