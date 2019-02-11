@@ -260,7 +260,7 @@ nav {
    padding:0;
 
    h1.title {
-      font-size:7em;
+      font-size:5em;
       text-align: center;
       padding:0;
       // margin-bottom:-40px;
@@ -273,7 +273,7 @@ nav {
 }
 
 h1.title {
-   font-size:7em;
+   font-size:5em;
    text-align: center;
    padding:0 !important;
    // margin-bottom:-40px;
@@ -320,11 +320,12 @@ h1.title {
 }
 
 .two-info {
-   padding:20px 30px 0px 30px;
+   padding:20px 30px 40px 30px;
    font-family:"Poppins", sans-serif;
    font-weight:400 !important;
 
    h1 {
+      line-height:35px;
       font-size:22px;
       color:$DarkGray;
       padding-bottom:0;
@@ -511,12 +512,18 @@ footer {
    }
 
    section {
-      padding:70px 0px;
+      padding:70px 0px 40px 0px;
+   }
+   
+   #supporters.odd {
+      background:#fafafa !important;
+      padding-bottom:40px;
    }
 
    .one-collumn ul {
       padding-left:10%;
       padding-right:10%;
+      margin-bottom:0px;
 
       li {
          text-align: left;
@@ -593,14 +600,32 @@ footer {
 
    #priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
       margin-bottom:0 !important;
+      min-height: 295px;
+      height: auto !important;
    }
-
+   
    .two-collumn, .meet-alex_story {
       width:100% !important;
    }
 
    .btn-section {
       width:80% !important;
+   }
+   
+   footer #alex-footer {
+      height:200px;
+   }
+   
+   footer #footer-logo {
+      margin:-80px auto;
+   }
+   
+   footer #footer-info {
+      margin-top:80px;
+   }
+   
+   footer #footer-info #footer-socialmedia ul {
+      height:90px !important;
    }
 }
 
