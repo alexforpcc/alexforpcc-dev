@@ -406,7 +406,8 @@ footer {
       position: relative;
 
       .footer-info {
-         width:100%;
+         max-width:$max-width;
+         margin:auto;
          min-height:$footer-height;
       }
 
@@ -421,6 +422,25 @@ footer {
          float:right;
          margin-right:5%;
          line-height:$footer-height;
+
+         ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 !important;
+            height:0px;
+
+            li {
+               display:inline-block;
+               margin:0;
+               padding:0;
+               height:60px;
+
+               a img {
+                  height:60px;
+                  width:60px !important;
+               }
+            }
+         }
       }
    }
 }
