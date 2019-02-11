@@ -8,6 +8,7 @@ body {
 .btn {
    text-decoration: none;
    width:100%;
+   background: #FFF;
    display:block;
    text-align: center;
    padding:15px 0px;
@@ -79,7 +80,6 @@ header {
       -moz-transition:all 0.3s ease-in-out;
       -o-transition:all 0.3s ease-in-out;
       transition:all 0.3s ease-in-out;
-      box-shadow:$box-shadowBefore;
 
       &:hover {
          box-shadow:$box-shadow;
@@ -114,7 +114,7 @@ header {
 /***** Navigation *****/
 
 nav {
-   margin-bottom:20px;
+   margin-bottom:30px;
 
    #nav-wrapper {
       height:$top-bar_height;
@@ -125,6 +125,8 @@ nav {
          list-style:none;
          line-height:$top-bar_height;
          padding-left:0px !important;
+         position: relative;
+         z-index:100 !important;
 
          li {
             display:inline-block;
@@ -167,6 +169,7 @@ nav {
       line-height:$top-bar_height;
       font-size:36px;
       color:$DarkGray;
+      padding:0px 30px;
    }
 }
 
@@ -302,6 +305,8 @@ article > section#meet-alex {
 .left {float:left;}
 .right {float:right;}
 
+/****** Responsive CSS ******/
+
 // @media screen and (min-width: 725px) {
 //
 // }
@@ -316,6 +321,12 @@ article > section#meet-alex {
    }
 }
 
+@media screen and (min-width:725px) {
+   #nav-desktop {
+      display:inline-block !important;
+   }
+}
+
 @media screen and (max-width:600px) {
    #nav-mobile {
       display:inline-block !important;
@@ -323,16 +334,27 @@ article > section#meet-alex {
 
    #nav-desktop {
       display:none;
+      box-shadow:$box-shadow-one;
 
       li {
          display: block !important;
+         line-height:0px !important;
+
+         &:after {
+            content:"" !important;
+         }
       }
 
       li a {
-         background: red !important;
+         background: white !important;
          display:block;
-         margin:0;
-         padding:0;
+         margin:0 !important;
+         padding:40px 0px !important;
+         width:100% !important;
       }
    }
+}
+
+@-ms-viewport{
+  width: device-width;
 }
