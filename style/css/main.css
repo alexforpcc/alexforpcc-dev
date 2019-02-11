@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+.even {
+  background: #fafafa;
+}
+
+.odd {
+  background: #FFF;
+}
+
 .btn {
   text-decoration: none;
   background: #FFF;
@@ -164,12 +172,12 @@ nav #nav-mobile:hover {
   height: 400px;
 }
 
-article > section#meet-alex {
-  height: 500px;
+.two-collumn {
+  height: auto;
   margin: 0;
   padding: 0;
 }
-article > section#meet-alex .title {
+.two-collumn h1.title {
   font-size: 7em;
   text-align: center;
   padding: 0 !important;
@@ -180,7 +188,7 @@ article > section#meet-alex .title {
   font-family: "Poppins", sans-serif;
 }
 
-.meet-alex-profile {
+.two-collumn-profile {
   max-width: 800px;
   height: 400px;
   background: white;
@@ -191,11 +199,11 @@ article > section#meet-alex .title {
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.04), -10px 0px 40px rgba(0, 0, 0, 0.06);
 }
-.meet-alex-profile:hover {
+.two-collumn-profile:hover {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07), -10px 0px 40px rgba(0, 0, 0, 0.08);
 }
 
-#alex-picture {
+.two-collumn-picture {
   float: left;
   height: 400px;
   width: 40%;
@@ -203,30 +211,30 @@ article > section#meet-alex .title {
   background-size: cover;
 }
 
-#alex-descr-wrap {
+.two-collumn-text {
   float: right;
   height: 400px;
   width: 60%;
   overflow: scroll;
 }
 
-.alex-descr {
+.two-info {
   padding: 20px 30px 0px 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 400 !important;
 }
-.alex-descr h1 {
+.two-info h1 {
   font-size: 22px;
   color: #5B5B5B;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.alex-descr h3 {
+.two-info h3 {
   color: #F4F4F4;
   padding: 0px;
   margin: 0;
 }
-.alex-descr p {
+.two-info p {
   font-size: 14px;
   line-height: 25px;
   color: #969696;
@@ -302,9 +310,13 @@ article > section#meet-alex .title {
     display: inline-block !important;
   }
 
-  article > section#meet-alex {
-    width: 95%;
+  .two-collumn {
     margin: auto;
+  }
+}
+@media screen and (max-width: 830px) {
+  .two-collumn {
+    width: 95%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -336,18 +348,18 @@ article > section#meet-alex .title {
     width: 100% !important;
   }
 
-  .meet-alex-profile {
+  .two-collumn-profile {
     min-height: 400px !important;
     height: auto !important;
     box-shadow: 0px 0px 0px !important;
   }
 
-  #alex-picture {
+  .two-collumn-picture {
     float: none;
     width: 100%;
   }
 
-  #alex-descr-wrap {
+  .two-collumn-text {
     float: none;
     width: 100%;
   }
@@ -370,7 +382,7 @@ article > section#meet-alex .title {
     width: 100%;
   }
 
-  article > section#meet-alex .title {
+  .two-collumn h1.title {
     font-size: 4em !important;
     line-height: 70px;
   }
