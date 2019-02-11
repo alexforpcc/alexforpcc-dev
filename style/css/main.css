@@ -15,6 +15,10 @@ body {
   background: #FFF;
 }
 
+section {
+  padding: 150px 0px;
+}
+
 .btn {
   text-decoration: none;
   background: #FFF;
@@ -181,7 +185,7 @@ nav #nav-mobile:hover {
   font-size: 7em;
   text-align: center;
   padding: 0 !important;
-  margin: 150px 0px 0px 0px;
+  margin: 0px;
   color: #DBDBDB;
   font-weight: 600;
   text-transform: uppercase;

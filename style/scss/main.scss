@@ -12,6 +12,10 @@ body {
 .even {background:rgb(250, 250, 250);}
 .odd {background:#FFF;}
 
+section {
+   padding:150px 0px;
+}
+
 .btn {
    text-decoration: none;
    // width:100%;
@@ -200,7 +204,7 @@ nav {
       text-align: center;
       padding:0 !important;
       // margin-bottom:-40px;
-      margin:150px 0px 0px 0px;
+      margin:0px;
       color:$Gray;
       font-weight:600;
       text-transform: uppercase;
