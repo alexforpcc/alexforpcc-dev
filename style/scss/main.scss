@@ -316,7 +316,7 @@ h1.title {
    float:right;
    height:400px;
    width:60%;
-   overflow: scroll;
+   overflow-y: scroll;
 }
 
 .two-info {
@@ -626,6 +626,17 @@ footer {
    
    footer #footer-info #footer-socialmedia ul {
       height:90px !important;
+   }
+   
+   .blocker {
+      background-color:transparent !important;
+      padding-top:0 !important;
+   }
+}
+
+@media screen and (max-width:$max-width) {
+   .blocker {
+      padding-top:0 !important;
    }
 }
 
