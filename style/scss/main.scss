@@ -239,9 +239,13 @@ nav {
    float:left;
    height:400px;
    width:40%;
-   background:url("../../assets/img/alex-portait.jpg");
    background-size:cover;
 }
+
+.alex-pic {background:url("../../assets/img/alex-portait.jpg");background-size: cover;background-position: center  center;}
+.equity {background:url("../../assets/gfx/equity.png");background-size: cover;background-position: center  center;}
+.money {background:url("../../assets/gfx/money.png");background-size: cover;background-position: center  center;}
+.community {background:url("../../assets/gfx/community.png");background-size: cover;background-position: center  center;}
 
 .two-collumn-text {
    float:right;
