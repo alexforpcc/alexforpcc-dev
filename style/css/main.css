@@ -162,7 +162,7 @@ nav #nav-wrapper ul li a:hover {
 nav #nav-mobile {
   display: none;
   line-height: 60px;
-  font-size: 50px;
+  font-size: 40px;
   color: #969696;
   padding: 0px 30px;
 }
@@ -172,8 +172,10 @@ nav #nav-mobile:hover {
 
 /***** #Cover *****/
 #cover {
-  background: #c8c8c8;
-  height: 400px;
+  background: url("../../assets/img/alex-with-youth.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 .two-collumn {
@@ -313,13 +315,14 @@ nav #nav-mobile:hover {
   #nav-desktop {
     display: inline-block !important;
   }
-
-  .two-collumn {
-    margin: auto;
-  }
 }
 @media screen and (max-width: 830px) {
   .two-collumn {
+    width: 95%;
+    margin: auto;
+  }
+
+  .meet-alex_story {
     width: 95%;
   }
 }
@@ -387,8 +390,16 @@ nav #nav-mobile:hover {
   }
 
   .two-collumn h1.title {
-    font-size: 4em !important;
+    font-size: 3em !important;
     line-height: 70px;
+  }
+
+  .two-collumn, .meet-alex_story {
+    width: 100% !important;
+  }
+
+  .btn-section {
+    width: 80% !important;
   }
 }
 @-ms-viewport {
