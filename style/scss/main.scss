@@ -7,7 +7,7 @@ body {
 
 .btn {
    text-decoration: none;
-   width:100%;
+   // width:100%;
    background: #FFF;
    display:block;
    text-align: center;
@@ -69,7 +69,7 @@ body {
 /***** Header *****/
 
 header {
-   min-height:400px;
+   min-height:100px;
    width:100%;
    text-align: center;
 
@@ -170,6 +170,10 @@ nav {
       font-size:36px;
       color:$DarkGray;
       padding:0px 30px;
+      
+      &:hover {
+         cursor: pointer;
+      }
    }
 }
 

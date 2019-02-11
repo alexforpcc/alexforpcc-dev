@@ -5,7 +5,6 @@ body {
 
 .btn {
   text-decoration: none;
-  width: 100%;
   background: #FFF;
   display: block;
   text-align: center;
@@ -61,7 +60,7 @@ body {
 
 /***** Header *****/
 header {
-  min-height: 400px;
+  min-height: 100px;
   width: 100%;
   text-align: center;
 }
@@ -149,6 +148,9 @@ nav #nav-mobile {
   font-size: 36px;
   color: #5B5B5B;
   padding: 0px 30px;
+}
+nav #nav-mobile:hover {
+  cursor: pointer;
 }
 
 /***** #Cover *****/

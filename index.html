@@ -30,7 +30,7 @@
 		jQuery(document).ready(function(){
 			jQuery('#alex-slider').slippry();
 			$("#nav-mobile").click(function() {
-				$("#nav-desktop").toggle();
+				$("#nav-desktop").slideToggle( "normal" );
 			});
 		});
 		</script>
@@ -44,14 +44,15 @@
 					<div class="sm-top">Social Media</div>
 				</div>
 			</div>
-			
+
 			<!-- Logo -->
 			<embed src="assets/gfx/svg/logo.svg" type="image/svg+xml" id="logo" />
 
 			<!-- Navigation -->
 			<nav>
 				<div id="nav-wrapper">
-					<i id="nav-mobile" class="fas fa-ellipsis-h"></i>
+					<!-- <i id="nav-mobile" class="fas fa-ellipsis-h"></i> -->
+					<i id="nav-mobile" class="fas fa-bars"></i>
 					<ul id="nav-desktop">
 						<li><a href="#meet-alex">Meet Alex</a></li>
 						<li><a href="#">Priorities</a></li>
