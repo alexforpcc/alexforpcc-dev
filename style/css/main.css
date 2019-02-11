@@ -15,6 +15,10 @@ body {
   background: #FFF;
 }
 
+#priorities .two-collumn-profile, #priorities .two-collumn-picture, #priorities .two-collumn-text {
+  height: 320px;
+}
+
 section {
   padding: 150px 0px;
 }
