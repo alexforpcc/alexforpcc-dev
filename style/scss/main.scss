@@ -421,7 +421,7 @@ footer {
       #footer-socialmedia {
          float:right;
          margin-right:5%;
-         line-height:$footer-height;
+         margin-top:10px;
 
          ul {
             list-style: none;
@@ -552,6 +552,14 @@ footer {
 
    .btn-section {
       width:80% !important;
+   }
+}
+
+@media screen and (max-width:580px) {
+   footer #footer-info #footer-copyright, footer #footer-info #footer-socialmedia {
+      float:none;
+      text-align: center;
+      margin:auto;
    }
 }
 
